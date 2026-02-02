@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookly</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <h1>COOKLY</h1>
+            <h3>COOKLY</h3>
             <div class="tag-line">
             <p class="tag-text">Search |</p>
             <p class="tag-text">Cook |</p>
@@ -20,9 +21,12 @@
     <main>
         <SECTION>
             <div class="search-container">
+                <h1 id="welcome-note">Looking for something tasty?</h1>
                 <FORM>
-                    <input type="text" placeholder="craving something?" class="searchBox">
-                    <button type="button">SEARCH</button>
+                    <input type="text" placeholder="Search Dishes" class="searchBox">
+                    <button type="button" class="search-button">
+                        <i class='bx  bx-search bx-sm' id="search-icon"></i> 
+                    </button>
                 </FORM>
             </div>
             <div class="recipe-container">
@@ -35,3 +39,4 @@
     <script src="/assets/javascript/script.js"></script>
 </body>
 </html>
+
