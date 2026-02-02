@@ -12,6 +12,10 @@ input{
     all: unset;
 }
 
+body{
+    background-color: #EFE3C2;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -34,8 +38,13 @@ h3{
     margin-left: 20px;
 }
 
+h1{
+    color: #DE802B;
+}
+
 header{
-    background-color: rgb(248, 166, 34);
+    background-color: #BBCB2E;
+    background: linear-gradient(180deg, #BBCB2E, #839705);
 }
 
 .search-container{
@@ -54,12 +63,14 @@ form{
 }
 
 .search-button{
-    background-color: rgb(180, 182, 185);
+    background-color: #8BAE66;
     border-radius: 0 5px 5px 0;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .searchBox{
-    border: solid 2px rgb(180, 182, 185);
+    border: solid 2px #8BAE66;
     border-radius: 5px 0 0 5px;
     width: 300px;
 }
@@ -67,3 +78,4 @@ form{
 #search-icon{
     color: white;
 }
+
