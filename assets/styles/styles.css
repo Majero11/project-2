@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag-line{
+    display: flex;
+    margin-right: 30px;
+}
+
+.tag-text{
+    margin: 5px
+}
