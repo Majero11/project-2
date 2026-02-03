@@ -25,12 +25,12 @@ nav{
 
 .tag-line{
     display: flex;
-    margin-right: 30px;
+   margin-top: 10px;
 }
 
 .tag-text{
     margin: 5px;
-    color: white;
+    color: #DE802B;
 }
 
 h3{
@@ -43,8 +43,8 @@ h1{
 }
 
 header{
-    background-color: #BBCB2E;
-    background: linear-gradient(180deg, #BBCB2E, #839705);
+    background-color: #839705;
+    /* background: linear-gradient(180deg, #BBCB2E, #839705); */
 }
 
 .search-container{
@@ -60,22 +60,52 @@ header{
 
 form{
     display: flex;
+    position:relative;
+}
+
+form::before{
+    content: "";
+    height: 48px;
+    width: 360px;
+    background: #4b5946;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    z-index: -10000
+    ;
+    border-radius: 40px;
 }
 
 .search-button{
-    background-color: #8BAE66;
-    border-radius: 0 5px 5px 0;
+    background-color: #7b8f4e;
+    border-radius: 0 20px 20px 0;
     padding: 5px;
     cursor: pointer;
 }
 
 .searchBox{
-    border: solid 2px #8BAE66;
-    border-radius: 5px 0 0 5px;
+    border: solid 2px #7b8f4e;
+    border-radius: 20px 0 0 20px;
     width: 300px;
+    z-index: 100;
+    position: relative;
 }
 
 #search-icon{
-    color: white;
+    color: #4b5946;
+}
+
+#search-icon:hover{
+    color: #ddff02;
+}
+
+.searchBox::placeholder{
+    text-align: center;
+    color: rgb(120, 130, 97);
+}
+
+input{
+    color: #EFE3C2;
+    text-align: center;
 }
 
