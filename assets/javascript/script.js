@@ -29,6 +29,7 @@ async function displayRecipe(){
                  <p id="meal-detaisl">${meal.strArea} recipe | ${meal.strCategory}</p>
              </div>
              `
+             
         recipeContainer.appendChild(recipeDiv);  
      });
 
