@@ -13,7 +13,8 @@ input{
 }
 
 body{
-    background-color: #EFE3C2;
+    background-color: #f0e8d1;
+    
 }
 
 nav{
@@ -33,7 +34,7 @@ nav{
     color: #DE802B;
 }
 
-h3{
+#app-name{
     color: white;
     margin-left: 20px;
 }
@@ -52,7 +53,9 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
+
 
 #welcome-note{
     margin-top: 30px;
@@ -72,8 +75,7 @@ form::before{
     position: absolute;
     top: -5px;
     left: -10px;
-    z-index: -10000
-    ;
+    z-index: -1;
     border-radius: 40px;
 }
 
@@ -108,5 +110,38 @@ form::before{
 input{
     color: #EFE3C2;
     text-align: center;
+}
+
+/* //====================================// */
+
+.recipe-container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    justify-items: center;
+    width: 100vw;
+    margin-top: 20px;
+}
+
+.recipe{
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    width: 500px;
+
+}
+
+img{
+    border-radius: 10px 0 0 10px;
+    height: 150px;
+}
+
+.recipe-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
