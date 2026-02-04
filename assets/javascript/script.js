@@ -23,10 +23,12 @@ async function displayRecipe(){
          const recipeDiv = document.createElement('div')
         recipeDiv.classList.add('recipe');
         recipeDiv.innerHTML = `
-             <img src="${meal.strMealThumb}">
+            <div class="img-container">
+                <img src="${meal.strMealThumb}">
+            </div>
              <div class="recipe-details">
-                 <h3 id="meal-name">${meal.strMeal}</h3>
-                 <p id="meal-detaisl">${meal.strArea} recipe | ${meal.strCategory}</p>
+                    <h3 id="meal-name">${meal.strMeal}</h3>
+                    <p id="meal-detaisl">${meal.strArea} recipe | ${meal.strCategory}</p>
              </div>
              `
              
