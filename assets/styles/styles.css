@@ -37,9 +37,10 @@ nav{
 
 .tag-text{
     margin: 5px;
-    color: #DE802B;
+    color: #f3f3f3;
     font-family: "poppins";
     font-weight: 20;
+    z-index: 10;
 }
 
 #app-name{
@@ -47,16 +48,24 @@ nav{
     margin-left: 20px;
 }
 
+h3{
+    color: white;
+    font-family: "montserrat";
+    font-weight: 5;
+    font-size: 1.2rem;
+}
+
 h1{
-    color: #DE802B;
+    color: #efefee;
     font-family: "Mukta";
     font-weight: 20;
+    z-index: 10;
 }
 
 header{
-    background-color: #516d0a;
+    /* background-color: #79a507; */
     padding: 5px;
-    /* background: linear-gradient(180deg, #BBCB2E, #839705); */
+    background: linear-gradient(90deg, #79a507, #3a6802);
 }
 
 .search-container{
@@ -64,8 +73,19 @@ header{
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-image: url('/assets/images/chopping board.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
+.search-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
 
 #welcome-note{
     margin-top: 30px;
@@ -90,14 +110,14 @@ form{
 } */
 
 .search-button{
-    background-color: #DE802B;
+    background-color: #4c9d36;
     border-radius: 0 20px 20px 0;
     padding: 5px;
     cursor: pointer;
 }
 
 .searchBox{
-    border: solid 2px #DE802B;
+    border: solid 2px #4c9d36;
     border-radius: 20px 0 0 20px;
     width: 300px;
     z-index: 100;
@@ -114,11 +134,11 @@ form{
 
 .searchBox::placeholder{
     text-align: center;
-    color: rgb(130, 115, 97);
+    color: rgb(170, 169, 166);
 }
 
 input{
-    color: #5c5749;
+    color: #ededed;
     text-align: center;
 }
 
@@ -151,6 +171,7 @@ input{
     height: 150px;
     overflow: hidden;
     border-radius: 10px 0 0 10px;
+    width: 50p;
 }
 .img-container:hover img{
     transform: scale(1.2);
@@ -161,6 +182,15 @@ img{
     height: 100%;
     object-fit: cover;
     transition: transform 0.9s ease ;
+}
+
+.img-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 150px;
+    background: rgba(36, 65, 1, 0.3);
+    mix-blend-mode: soft-light;
 }
 
 
