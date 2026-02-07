@@ -59,32 +59,36 @@ async function displayRecipe(){
 }
 
 function getIngredients(meal) {
-    let ingredientsList = '';
-    for(let i = 1; 1 <= 20; i++){
+    let ingredients = [];
+    for(let i = 1; i <= 20; i++){
         const ingredient = meal[`strIngredient${i}`];
         if (ingredient){
             const measure = meal[`strMeasure${i}`];
-            ingredientsList += `<li> ${measure} ${ingredient}</li>`
+            ingredients.push(`${measure} ${ingredient}`);
         }
         else{
             break;
         }
     }
-    return ingredientsList
+    return ingredients.join(', ');
 }
 
 
 
 function Popup(meal) {
     preprationDetailsInfo.innerHTML = `
-        <h1 recName>${meal.strMeal}</h1>
-        <h3>Ingredients</h3>
-        <ul class="ingredientsList">${getIngredients(meal)}</ul>
+        <div class="preparationDetailsContainer">
+            <h1 class="recName">${meal.strMeal}</h1>
+            <img src="${meal.strMealThumb}" class='Popupimg'>
+             <div class="ingredContainer">
+                <h3 class="ingredientsTitle">Ingredients</h3>
+                <p class="ingredientsList">${getIngredients(meal)}</p>
+            </div>
+            <div>
+                <h3 class="prepInstructions">Preparation Instructions</h3>
+                <p class="instructions">${meal.strInstructions}</p>
+            </div>
         <div>
-            <h3>Preparation Instructions</h3>
-            <p class="instructions">${meal.strInstructions}</p>
-        </div>
-
     `
     preprationDetailsInfo.parentElement.style.display = 'block';
     

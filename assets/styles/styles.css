@@ -84,6 +84,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 300px;
+    z-index: 0;
 }
 
 .search-container::before{
@@ -236,7 +237,8 @@ img{
 }
 
 .recipeButton{
-    background: linear-gradient(90deg, #11b411, #078007);
+    background: linear-gradient(90deg, #42b411, #298007);
+    /* background: linear-gradient(90deg, #d1b517, #907b03); */
     position: absolute;
     text-align: center;
     right: 0%;
@@ -264,12 +266,70 @@ img{
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.3);
     -webkit-transform: translate(-50%, -50%);
-    width: 90%;
-    height: 80%;
+    width: 50%;
+    overflow: auto;
+    padding-bottom: 30px;
     align-items: center;
+    transition: all 0.9s ease-in-out;
+    border-radius: 20px;
+    overflow-y: scroll;
 }
 
 .prepration-details-info{
+    display: flex;
+    justify-content: center;
+}
+
+.preparationDetailsContainer{
+    background: linear-gradient(295deg, #ecebe9, #ccd1c5);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
     align-items: center;
 }
 
+.Popupimg{
+    height: 300px;
+    border-radius: 20px;
+}
+
+.instructions{
+    padding: 0px 15px 15px;
+}
+
+.recName{
+    color: #538f0b ;
+}
+
+#close-icon{
+    color: white;
+}
+
+.prepInstructions{
+    color: #6b675c;
+    margin-top: 10px;
+}
+
+.ingredientsTitle{
+    color: #6b675c ;
+    text-align: left;
+}
+
+.ingredientsList{
+    padding: 0 20px;
+    font-family: "Poppins";
+    font-size: .9rem;
+    color: #313131;
+}
+
+.instructions{
+    font-family: "Poppins";
+    font-size: .9rem;
+    color: #313131;
+}
+
+.ingredContainer{
+    margin-top: 20px;
+}
