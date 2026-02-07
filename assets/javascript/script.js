@@ -1,6 +1,9 @@
 const searchBox = document.querySelector('.searchBox');
 const searchBtn = document.querySelector('.search-button');
 const recipeContainer = document.querySelector('.recipe-container');
+const preprationDetailsInfo = document.querySelector('.prepration-details-info');
+const recipeCloseBtn = document.querySelector('.recipe-close-btn');
+
 
 
 async function fetchData (input){
@@ -13,6 +16,7 @@ async function fetchData (input){
     }
 }
 
+// Function to display recipe
 async function displayRecipe(){
     const recipeSearch = searchBox.value.trim();
     recipeContainer.innerHTML = "";
@@ -21,7 +25,9 @@ async function displayRecipe(){
 
     recipe.meals.forEach(meal => {
          const recipeDiv = document.createElement('div')
-        recipeDiv.classList.add('recipe');
+         recipeDiv.classList.add('recipe');
+         const recipeDiv2 = document.createElement('div')
+        recipeDiv2.classList.add('recipeShadow');
         recipeDiv.innerHTML = `
             <div class="img-container">
                 <img src="${meal.strMealThumb}">
@@ -35,18 +41,41 @@ async function displayRecipe(){
          button.classList.add("recipeButton");
          button.textContent = "recipe";
 
+          //  adding event listener to recipe button 
+        button.addEventListener('click', () => {
+            Popup(meal)
+        })
+
          const detailsContainer = document.createElement('div');
          detailsContainer.classList.add('detailsContainer')
 
          detailsContainer.appendChild(recipeDiv)
          detailsContainer.appendChild(button);
+         detailsContainer.appendChild(recipeDiv2)
         recipeContainer.appendChild(detailsContainer);  
+
+
      });
 
+}
+
+function Popup(meal) {
+    preprationDetailsInfo.innerHTML = `
+        <h2>${meal.strMeal}</h2
+
+    `
+    preprationDetailsInfo.parentElement.style.display = 'block';
+    
 }
 
 searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     displayRecipe();
+})
 
+searchBox.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter'){
+        e.preventDefault();
+        displayRecipe();
+    }
 })
