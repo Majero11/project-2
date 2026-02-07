@@ -31,11 +31,16 @@ async function displayRecipe(){
                     <p id="meal-detaisl">${meal.strArea} recipe | ${meal.strCategory}</p>
              </div>
              `
-         const button = document.createElement("button") 
-         button.classList.add("more")   
+         const button = document.createElement("button") ;
+         button.classList.add("recipeButton");
          button.textContent = "recipe";
-         recipeDiv.appendChild(button)
-        recipeContainer.appendChild(recipeDiv);  
+
+         const detailsContainer = document.createElement('div');
+         detailsContainer.classList.add('detailsContainer')
+
+         detailsContainer.appendChild(recipeDiv)
+         detailsContainer.appendChild(button);
+        recipeContainer.appendChild(detailsContainer);  
      });
 
 }
