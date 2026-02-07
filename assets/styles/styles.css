@@ -225,7 +225,7 @@ img{
     color: #516d0a;
 }
 
-#meal-detaisl{
+#meal-details{
     text-align: center;
     font-size: .8rem;
     font-family: "Poppins";
@@ -258,5 +258,18 @@ img{
 
 .prep-details{
     display: none;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    align-items: center;
+}
+
+.prepration-details-info{
+    align-items: center;
 }
 

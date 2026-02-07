@@ -34,7 +34,7 @@ async function displayRecipe(){
             </div>
              <div class="recipe-details">
                     <h3 id="meal-name">${meal.strMeal}</h3>
-                    <p id="meal-detaisl">${meal.strArea} recipe | ${meal.strCategory}</p>
+                    <p id="meal-details">${meal.strArea} recipe | ${meal.strCategory}</p>
              </div>
              `
          const button = document.createElement("button") ;
@@ -54,19 +54,43 @@ async function displayRecipe(){
          detailsContainer.appendChild(recipeDiv2)
         recipeContainer.appendChild(detailsContainer);  
 
-
      });
 
 }
 
+function getIngredients(meal) {
+    let ingredientsList = '';
+    for(let i = 1; 1 <= 20; i++){
+        const ingredient = meal[`strIngredient${i}`];
+        if (ingredient){
+            const measure = meal[`strMeasure${i}`];
+            ingredientsList += `<li> ${measure} ${ingredient}</li>`
+        }
+        else{
+            break;
+        }
+    }
+    return ingredientsList
+}
+
+
+
 function Popup(meal) {
     preprationDetailsInfo.innerHTML = `
-        <h2>${meal.strMeal}</h2
+        <h1 recName>${meal.strMeal}</h1>
+        <h3>Ingredients</h3>
+        <ul class="ingredientsList">${getIngredients(meal)}</ul>
+        <div>
+            <h3>Preparation Instructions</h3>
+            <p class="instructions">${meal.strInstructions}</p>
+        </div>
 
     `
     preprationDetailsInfo.parentElement.style.display = 'block';
     
 }
+
+
 
 searchBtn.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -78,4 +102,8 @@ searchBox.addEventListener('keydown', (e) => {
         e.preventDefault();
         displayRecipe();
     }
+})
+
+recipeCloseBtn.addEventListener('click', () => {
+    preprationDetailsInfo.parentElement.style.display = 'none'
 })
