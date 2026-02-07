@@ -69,6 +69,12 @@ h1{
     z-index: 10;
 }
 
+.welcome{
+    color: #6cbd1a;
+    font-family: "Mukta";
+    z-index: 10;
+}
+
 header{
     /* background-color: #79a507; */
     padding: 5px;
@@ -140,6 +146,48 @@ input{
     color: #ededed;
     text-align: center;
 }
+
+/* =================About=========================== */
+
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 14rem;
+}
+
+
+.about{
+    background-color: #b3b3b3;
+    margin: 20px 0px; 
+    padding: 10px;
+    width: 33rem;
+    height: 12rem;
+    border-radius: 2px;
+}
+
+.content{
+    font-family: "poppins";
+    font-size: .74em;
+    color: #545454;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutAtlas{
+    color: #3e3e3e;
+margin-bottom: 50px;
+}
+
+.funText{
+    font-weight: 800;
+    color: #45ad09;
+}
+
 
 /* //===============RECIPE CONTAINER=====================// */
 
