@@ -18,6 +18,7 @@ button{
     --clr-bright:#dde3e2;
     --clr-offWhite: rgb(222, 223, 219);
     --clr-darker-grey:#3e3e3e;
+    --clr-lighterGrey: #545454;
     --clr-greenDark: #3a6d0a;
 }
 
@@ -174,7 +175,11 @@ input{
 .content{
     font-family: "poppins";
     font-size: .74em;
-    color: #545454;
+    color: var(--clr-lighterGrey);
+}
+
+.left-content{
+    text-align: center;
 }
 
 .about-left{
@@ -192,6 +197,13 @@ input{
 .funText{
     font-weight: 800;
     color: #45ad09;
+}
+
+hr{
+    margin: 5px 300px;
+    border: none;
+    background-color: var(--clr-greenDark);
+    height: 1px;
 }
 
 
@@ -297,7 +309,7 @@ img{
     top: 83%;
     width: 100px;
     padding: 3px;
-    border-radius: 10px 10px ;
+    border-radius: 10px 2px 10px 10px ;
     color: rgb(255, 255, 253);
     transition: transform 0.3s ease;
     font-family: "merriweather";
