@@ -475,6 +475,7 @@ img{
 
     #meal-details{
         top: 65%;
+        font-size: 0.65em;
 
     }
 }
@@ -489,25 +490,19 @@ img{
 
 
     .recipe{
-        background: linear-gradient(295deg, #ecebe9, #ccd1c5);
         display: flex;
-        align-items: center;
-        width: 350px;
-        height: 150px;
-        clip-path: path("M 10,30 L 330,30 A 10,10, 0,0,1 340,40 L 340,110 A 10,10, 0,0,1 330,120 L 220,120 A 10,10, 0,0,0 210,130 L 210,140 A 10,10, 0,0,1 200,150 L 10,150 A 10,10, 0,0,1 0,140 L 0,40 A 10,10, 0,0,1 10,30 Z");
-        position: relative;
-        }
+        flex-direction: column;
+        clip-path: none;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+    }
 
     .recipeShadow{
-        background-color: rgb(191, 191, 191);
-        inset: 0;
-        top: .9%;
-        left: 0.1%;
-        width: 350px;
-        height: 150px;
-        clip-path: path("M 10,30 L 330,30 A 10,10, 0,0,1 340,40 L 340,110 A 10,10, 0,0,1 330,120 L 220,120 A 10,10, 0,0,0 210,130 L 210,140 A 10,10, 0,0,1 200,150 L 10,150 A 10,10, 0,0,1 0,140 L 0,40 A 10,10, 0,0,1 10,30 Z");
-        position: absolute;
-        z-index: -1;
+        clip-path: none;
+        width: 90%;
+        border-radius: 10px;
+
     }
 
     .about{
@@ -517,14 +512,43 @@ img{
         width: 80%;
         height: auto;
         border-radius: 2px;
-        }
+    }
 
     .recipeButton{
-    right: 3%;
+        position: relative;
+        top: -8%;
+        right: -47%;
     }
 
     .recipeContainer{
         grid-template-columns: 1fr;
+    }
+
+    .img-container{
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .recipe-details{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 350px;
+        justify-content: center;
+        position: relative;
+    }
+
+    #meal-details{
+        position: relative;
+        top: 0%;
+    }
+
+    .recipe-details{
+        height: 100px;
+        width: 150px;
+        top: -9%;
+
     }
 
 }
