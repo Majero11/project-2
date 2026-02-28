@@ -54,6 +54,7 @@ nav{
     margin: 5px;
     color: var(--clr-bright);
     font-family: "poppins";
+    font-size: clamp(.6rem, 6vw, 1rem);
     font-weight: 180;
     z-index: 10;
 }
@@ -111,6 +112,11 @@ header{
     inset: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: 0;
+}
+
+form{
+    width: min(500px, 80%);
+    justify-content: center;
 }
 
 #welcome-note{
@@ -549,6 +555,10 @@ img{
         width: 150px;
         top: -9%;
 
+    }
+
+    .searchBox{
+        width: min(850px, 100%);
     }
 
 }
