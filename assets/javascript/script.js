@@ -71,7 +71,7 @@ async function displayRecipe(){
 
      });
       } catch (error) {
-        recipeContainer.innerHTML = "<p>Something went wrong. Please try again later.</p>";
+        recipeContainer.innerHTML = "<p>Something went wrong. Please try again.</p>";
         console.error(error);
     }
 
