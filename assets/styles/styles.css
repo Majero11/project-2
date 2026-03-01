@@ -123,7 +123,7 @@ form{
     margin-top: 60px;
     margin-bottom: 20px;
     font-size: clamp(1rem, 6vw, 3rem);
-    font-weight: 150px;
+
 }
 
 form{
@@ -190,7 +190,6 @@ input{
     font-family: "poppins";
     font-size: clamp(.596em, 1vw, .75em);
     color: var(--clr-lighterGrey);
-    width: 40;
 }
 
 .left-content{
@@ -260,7 +259,7 @@ hr{
     left: 0.1%;
     width: 500px;
     height: 150px;
-    clip-path: path("M 10,0 L 490,0 A 10,10, 0,0,1 500,10 L 500,110 A 10,10, 0,0,1 490,120 L 400,120 A 10,10, 0,0,0 390,130 L 390,140 A 10,10, 0,0,1 380,150 L 10,150 A 10,10, 0,0,1 0,140 L 0,10 A 10,10, 0,0,1 10,0 Z");
+    clip-path: path("M 10 0 L 490 0 A 10 10 0 0 1 500 10 L 500 110 A 10 10 0 0 1 490 120 L 400 120 A 10 10 0 0 0 390 130 L 390 140 A 10 10 0 0 1 380 150 L 10 150 A 10 10 0 0 1 0 140 L 0 10 A 10 10 0 0 1 10 0 Z");
     position: absolute;
     z-index: -1;
 }
@@ -269,8 +268,8 @@ hr{
     height: 150px;
     overflow: hidden;
     border-radius: 10px 0 0 10px;
-    width: 50p;
 }
+
 .img-container:hover img{
     transform: scale(1.2);
 }
@@ -433,7 +432,7 @@ img{
         align-items: center;
         width: 350px;
         height: 150px;
-        clip-path: path("M 10,30 L 330,30 A 10,10, 0,0,1 340,40 L 340,110 A 10,10, 0,0,1 330,120 L 220,120 A 10,10, 0,0,0 210,130 L 210,140 A 10,10, 0,0,1 200,150 L 10,150 A 10,10, 0,0,1 0,140 L 0,40 A 10,10, 0,0,1 10,30 Z");
+        clip-path: path("M 10 30 L 330 30 A 10 10  0 0 1 340 40 L 340 110 A 10 10  0 0 1 330 120 L 220 120 A 10 10  0 0 0 210 130 L 210 140 A 10 10  0 0 1 200 150 L 10 150 A 10 10 0 0 1 0 140 L 0 40 A 10 10  0 0 1 10 30 Z");
         position: relative;
         }
 
@@ -444,7 +443,7 @@ img{
         left: 0.1%;
         width: 350px;
         height: 150px;
-        clip-path: path("M 10,30 L 330,30 A 10,10, 0,0,1 340,40 L 340,110 A 10,10, 0,0,1 330,120 L 220,120 A 10,10, 0,0,0 210,130 L 210,140 A 10,10, 0,0,1 200,150 L 10,150 A 10,10, 0,0,1 0,140 L 0,40 A 10,10, 0,0,1 10,30 Z");
+        clip-path: path("M 10 30 L 330 30 A 10 10  0 0 1 340 40 L 340 110 A 10 10  0 0 1 330 120 L 220 120 A 10 10  0 0 0 210 130 L 210 140 A 10 10  0 0 1 200 150 L 10 150 A 10 10 0 0 1 0 140 L 0 40 A 10 10  0 0 1 10 30 Z");
         position: absolute;
         z-index: -1;
     }
