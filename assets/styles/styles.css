@@ -20,7 +20,10 @@ button{
     --clr-darker-grey:#3e3e3e;
     --clr-lighterGrey: #545454;
     --clr-greenDark: #3a6d0a;
+    --green:#6cbd1a;
     --yellow: #dcd110;
+    --beige:#6b675c;
+    --beigie2:  #313131;
 }
 
 
@@ -84,7 +87,7 @@ h1{
 }
 
 .welcome{
-    color: #6cbd1a;
+    color: var(--green);
     font-family: "Mukta" , sans-serif;
     z-index: 10;
 }
@@ -104,7 +107,6 @@ header{
     background-position: center;
     height: 300px;
     z-index: 0;
-    background-color: #298007;
 }
 
 .search-container::before{
@@ -134,14 +136,14 @@ form{
 
 
 #search-button{
-    background-color: var(--yellow);
+    background-color: var(--green);
     border-radius: 0 20px 20px 0;
     padding: 5px;
     cursor: pointer;
 }
 
 .searchBox{
-    border: solid 2px var(--yellow);
+    border: solid 2px var(--green);
     border-radius: 20px 0 0 20px;
     width: 300px;
     z-index: 100;
@@ -153,7 +155,7 @@ form{
 }
 
 #search-icon:hover{
-    color: var(--clr-greenDark);
+    color: var(--yellow);
 }
 
 .searchBox::placeholder{
@@ -369,12 +371,12 @@ img{
 }
 
 .prepInstructions{
-    color: #6b675c;
+    color: var(--beige);
     margin-top: 10px;
 }
 
 .ingredientsTitle{
-    color: #6b675c ;
+    color: var(--beige) ;
     text-align: left;
 }
 
@@ -382,13 +384,13 @@ img{
     padding: 0 20px;
     font-family: "Poppins";
     font-size: .9rem;
-    color: #313131;
+    color: var(--beigie2);
 }
 
 .instructions{
     font-family: "Poppins", sans-serif;
     font-size: .9rem;
-    color: #313131;
+    color: var(--beigie2);
 }
 
 .ingredContainer{

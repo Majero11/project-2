@@ -9,15 +9,14 @@
 
 ## Colours:
 
-## Technologies Used 
+## Technologies
 
-## Languages Used 
-
+### Languages
 * HTML
 * CSS
 * Javascript
 
-### Frameworks, libraries and programs used
+### Frameworks, libraries and programs
 *  [Google Fonts](https://fonts.google.com/): was used to import the roboto and raleway fonts into style.css
 * [box icons](https://boxicons.com/icons?s=regular&w=normal&free=true): was used to import the icons for the mobile menu and social media icons 
 * [Git](https://git-scm.com/): Version control was managed by using the Gitpod terminal to commit changes to Git and push updates to GitHub.
@@ -46,6 +45,8 @@
 
 * ![JSHINT Validator](/documentation/code_validation/js_validation.png) was used throughout the project to identify and fix minor syntax errors. No errors or warnings were detected at the final stage. 
 
+* ![Lighthouse Validator](/documentation/lighthouse/lighthouse_validation.png) was used for improving the quality of web pages.
+
 ## User Story Testing 
 * Simple, user-friendly navigation throughout the site.
 
@@ -54,10 +55,20 @@
 
 # Credits
 
+## API
+API used was from [The Meal DB](https://www.themealdb.com)
+
 ## Images 
+images were from [Unpslash](https://unsplash.com),
+[The Meal DB](https://www.themealdb.com)
 
 ## Icons
+Icons were downloaded from [box icons](https://boxicons.com) 
 
 ## Tutorials
 
 ## Other websites used 
+
+[w3school](https://www.w3schools.com/html/)
+
+[Developer Mozila](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes)

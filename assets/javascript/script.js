@@ -1,5 +1,5 @@
 const searchBox = document.querySelector('.searchBox');
-const searchBtn = document.querySelector('.search-button');
+const searchBtn = document.querySelector('#search-button');
 const recipeContainer = document.querySelector('.recipeContainer');
 const preprationDetailsInfo = document.querySelector('.prepration-details-info');
 const recipeCloseBtn = document.querySelector('.recipe-close-btn');
