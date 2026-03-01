@@ -457,6 +457,10 @@ img{
         font-size: 0.65em;
 
     }
+
+     .prep-details{
+    width: 80%;
+    }
 }
 
 /* ============= Max 480 =================*/
@@ -537,6 +541,10 @@ img{
 
     .searchBox{
         width: min(850px, 100%);
+    }
+
+    .prep-details{
+    width: 90%;
     }
 
 }
