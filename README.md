@@ -1,7 +1,15 @@
 # FlavorAtlas
-
+![Mockup](/documentation/wire_frames/Am%20I%20responsive%20.png)
 
 # Introduction
+Flavor Atlas is a comprehensive recipe search platform designed to help users discover and explore meals from around the world. By entering a meal name or keyword, users can access:
+*	High-quality images of the meal
+*	Detailed ingredient lists
+*	Step-by-step preparation instructions
+*	Recipe category (e.g., dessert, main course, appetizer)
+*	Country of origin for each recipe
+
+Flavor Atlas serves as both a practical cooking guide and an educational resource, connecting users to culinary traditions globally. Whether you are a beginner in the kitchen or an experienced cook looking for inspiration, Flavor Atlas makes it easy to find, understand, and recreate dishes from across cultures.
 
 # Userstories
 
@@ -52,6 +60,8 @@
 
 
 # Deployment
+The site was deployed to GitHub pages. 
+* The link to the live website is here: [FlavorAtlas](https://majero11.github.io/FlavorAtlas/)
 
 # Credits
 
