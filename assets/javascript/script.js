@@ -23,6 +23,21 @@ async function displayRecipe(){
 
     const recipe = await fetchData(recipeSearch);
 
+
+    if (!recipeSearch) {
+        recipeContainer.innerHTML = "<p>Please enter a recipe name.</p>";
+        return;
+    }
+
+    try {
+        const recipe = await fetchData(recipeSearch);
+
+        // If API returns null or empty
+        if (!recipe || recipe.length === 0) {
+            recipeContainer.innerHTML = "<p>No recipe found. Try another search.</p>";
+            return;
+        }
+
     recipe.meals.forEach(meal => {
          const recipeDiv = document.createElement('div');
          recipeDiv.classList.add('recipe');
@@ -55,6 +70,10 @@ async function displayRecipe(){
         recipeContainer.appendChild(detailsContainer);  
 
      });
+      } catch (error) {
+        recipeContainer.innerHTML = "<p>Something went wrong. Please try again later.</p>";
+        console.error(error);
+    }
 
 }
 

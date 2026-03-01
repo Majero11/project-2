@@ -226,6 +226,9 @@ hr{
 
 /* //===============RECIPE CONTAINER=====================// */
 
+p{
+    color: var(--clr-lighterGrey);
+}
 .recipeContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
